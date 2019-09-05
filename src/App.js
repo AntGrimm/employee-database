@@ -14,7 +14,7 @@ class App extends Component {
             <NavBar />
             <Switch>
               <Route exact path="/" component={EmployeeList}></Route>
-              <Route exact path="/details" component={EmployeeDetails}></Route>
+              <Route exact path="/:details" component={EmployeeDetails}></Route>
               <Route exact path="/add" component={EmployeeAdd}></Route>
             </Switch>
           </Router>
