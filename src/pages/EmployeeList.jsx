@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
+import Cell from '../components/Cell'
 
 const EmployeeList = () => {
   const [employee, setEmployee] = useState([])
@@ -20,19 +21,21 @@ const EmployeeList = () => {
   return (
     <>
       <h1>All employees listed here</h1>
-      <ul className="employee-list">
+
+      <ul>
         {employee.map((employee, i) => {
           return (
-            <li className="employee" key={i}>
-              <Link to={`/${employee.id}`}>
-                <p>
-                  {employee.lastName}, {employee.firstName}
-                </p>
-              </Link>
-            </li>
+            <Cell
+              key={i}
+              {...employee}
+              // id={employee.id}
+              // lastName={employee.lastName}
+              // firstName={employee.firstName}
+            />
           )
         })}
       </ul>
+
       <Link to="/add">
         <button>Add New Employee</button>
       </Link>
