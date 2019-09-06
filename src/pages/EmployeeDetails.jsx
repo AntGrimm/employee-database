@@ -25,11 +25,6 @@ const EmployeeDetails = props => {
         <li>Last Name: {employeeDetails.lastName}</li>
         <li>Birthday: {employeeDetails.birthday}</li>
       </ul>
-      <ul>
-        <li>Detail 1</li>
-        <li>Detail 2</li>
-        <li>Detail 3</li>
-      </ul>
     </>
   )
 }

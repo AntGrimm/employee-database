@@ -8,7 +8,6 @@ const EmployeeAdd = props => {
   //     e.preventDefault()
   //     const resp = await axios.post(
   //       `https://sdg-staff-directory-app.herokuapp.com/api/neverNudes/`,
-  //       { firstName: '{firstName}', lastName: '{lastName}' }
   //     )
   //     console.log(resp.data)
   //   }

@@ -3,12 +3,17 @@ import { Link } from 'react-router-dom'
 
 const Cell = props => {
   return (
-    <li>
-      <Link to={`/${props.id}`}>
-        <td>{props.firstName}</td>
-        <td>{props.lastName}</td>
-      </Link>
-    </li>
+    <>
+      <li>
+        <img src={props.profileImage} />
+        <Link to={`/${props.id}`}>
+          <h3>
+            {props.lastName}, {props.firstName}
+          </h3>
+        </Link>
+        <h4>{props.jobTitle}</h4>
+      </li>
+    </>
   )
 }
 
