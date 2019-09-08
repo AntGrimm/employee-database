@@ -19,11 +19,35 @@ const EmployeeDetails = props => {
 
   return (
     <>
-      <h1>Single employee will have details here</h1>
+      <h1>Basic Information</h1>
+      <section>
+        <img
+          src={employeeDetails.profileImage}
+          alt={employeeDetails.lastName}
+        />
+        <h1>
+          {employeeDetails.firstName} {employeeDetails.lastName}
+        </h1>
+      </section>
       <ul>
-        <li>First Name: {employeeDetails.firstName}</li>
-        <li>Last Name: {employeeDetails.lastName}</li>
+        <li>Job Title: {employeeDetails.jobTitle}</li>
+        <li>Job Description: {employeeDetails.jobDescription}</li>
+        <li>Interesting Fact: {employeeDetails.interestingFact}</li>
+        <li>Email: {employeeDetails.email}</li>
+        <li>Phone: {employeeDetails.phoneNumber}</li>
         <li>Birthday: {employeeDetails.birthday}</li>
+        <li>
+          Address: {employeeDetails.address}, {employeeDetails.city},{' '}
+          {employeeDetails.state}, {employeeDetails.zip}
+        </li>
+        <li>Emergency Contact: {employeeDetails.emergencyContactPerson}</li>
+        <li>Phone: {employeeDetails.emergencyContactPhone}</li>
+        <li>Address: {employeeDetails.emergencyContactAddress}</li>
+        <li>Gender: {employeeDetails.gender}</li>
+        <li>Date Hired: {employeeDetails.hiredDate}</li>
+        <li>Full Time: {employeeDetails.isFullTime}</li>
+        <li>PTO Hours: {employeeDetails.ptoHours}</li>
+        <li>Salary: ${employeeDetails.salary}</li>
       </ul>
     </>
   )

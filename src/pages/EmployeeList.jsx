@@ -8,7 +8,7 @@ const EmployeeList = () => {
 
   const fetchEmployeeList = async () => {
     const resp = await axios.get(
-      'https://sdg-staff-directory-app.herokuapp.com/api/neverNudes/Employees'
+      'https://sdg-staff-directory-app.herokuapp.com/api/neverNudes/employees'
     )
     console.log(resp.data)
     setEmployee(resp.data)
@@ -20,19 +20,10 @@ const EmployeeList = () => {
 
   return (
     <>
-      <h1>All employees listed here</h1>
-
-      <ul>
+      <h1 className="list-sub-header">Employees</h1>
+      <ul className="list-box">
         {employee.map((employee, i) => {
-          return (
-            <Cell
-              key={i}
-              {...employee}
-              // id={employee.id}
-              // lastName={employee.lastName}
-              // firstName={employee.firstName}
-            />
-          )
+          return <Cell key={i} {...employee} />
         })}
       </ul>
 

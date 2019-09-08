@@ -9,4 +9,44 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #fffbf4;
+}
+
+.profile-picture {
+  height: 10rem;
+}
+
+.profile-list {
+  list-style: none;
+}
+
+.header {
+  background-color: #ef626c;
+  border: 1px solid black;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+}
+
+.list-box {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+  color: #8b575c;
+}
+
+.profile-name {
+  color: #bb999c;
+}
+
+.list-sub-header {
+  color: #8b575c;
+}
+
+.profile-job-title {
+  color: #7d8ca3;
 }

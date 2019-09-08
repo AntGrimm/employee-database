@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom'
 const Cell = props => {
   return (
     <>
-      <li>
-        <img src={props.profileImage} />
+      <li className="profile-list">
         <Link to={`/${props.id}`}>
-          <h3>
+          <img className="profile-picture" src={props.profileImage} />
+          <h3 className="profile-name">
             {props.lastName}, {props.firstName}
           </h3>
         </Link>
-        <h4>{props.jobTitle}</h4>
+        <h4 className="profile-job-title">{props.jobTitle}</h4>
       </li>
     </>
   )
