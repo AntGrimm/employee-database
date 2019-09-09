@@ -29,6 +29,15 @@ const EmployeeDetails = props => {
           {employeeDetails.firstName} {employeeDetails.lastName}
         </h1>
       </section>
+      {/* <ul>
+        {Object.keys(employeeDetails).map((key, i) => {
+          return (
+            <li>
+              {key} : {employeeDetails[key]}
+            </li>
+          )
+        })}
+      </ul> */}
       <ul>
         <li>Job Title: {employeeDetails.jobTitle}</li>
         <li>Job Description: {employeeDetails.jobDescription}</li>
