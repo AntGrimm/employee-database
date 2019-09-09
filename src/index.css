@@ -50,3 +50,27 @@ a {
 .profile-job-title {
   color: #7d8ca3;
 }
+
+.submit-button {
+  margin: 1rem;
+}
+
+.profile-entry {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.profile-entry > input {
+  display: flex;
+  margin: 0.5rem;
+}
+
+.emergency-contact-entry {
+  justify-content: space-between;
+}
+
+.emergency-contact-entry > input {
+  display: flex;
+  margin: 0.5rem;
+}

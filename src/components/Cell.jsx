@@ -6,7 +6,11 @@ const Cell = props => {
     <>
       <li className="profile-list">
         <Link to={`/${props.id}`}>
-          <img className="profile-picture" src={props.profileImage} />
+          <img
+            className="profile-picture"
+            src={props.profileImage}
+            alt={props.lastName}
+          />
           <h3 className="profile-name">
             {props.lastName}, {props.firstName}
           </h3>
